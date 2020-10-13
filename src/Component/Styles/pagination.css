@@ -1,0 +1,22 @@
+ul{
+    padding: 10px;
+    display: inline-block;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+}
+a{
+    cursor: pointer;
+    padding: 10px ;
+}
+
+li {
+    background-color: #4CAF50;
+    color: white;
+    border-right: 1px solid black;
+  }
+  
+ul a:hover:not(.active) {
+    background-color: #469649;
+}

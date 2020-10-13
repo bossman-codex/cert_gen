@@ -1,0 +1,51 @@
+ table, td{
+    border: 1px solid white;
+    margin: 0px;
+}
+
+.table{
+    width: 100vh;
+    height: 29vh;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+   
+}
+
+.cont{
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.container{
+  background-color: #0ED2AE;
+    background-size: cover;
+    height: 90.3vh;
+  
+}
+.container {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+   td,  th {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+   tr{
+    background-color: white;
+
+  }
+  
+  .container tr:hover {background-color: #ddd;}
+  
+  .container th {
+    text-align: left;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-weight: 700;
+  }
