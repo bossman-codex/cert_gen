@@ -7,7 +7,7 @@ function AdminHome() {
       const [data , setData] = useState([])
       const [searchfield , setSearchfield] = React.useState('')
       const [currentpage ,setCurrentpage] = useState(1)
-      const [postperpage] = useState(6)
+      const [postperpage] = useState(5)
      
 
 
