@@ -1,5 +1,4 @@
 import React from 'react'
-import PDF from './PDF'
 
 function Cert({Cert}) {
     return (
@@ -16,6 +15,3 @@ function Cert({Cert}) {
 }
 
 export default Cert
-{
-    // <Cert Cert ={{//cert}}/>}
-}

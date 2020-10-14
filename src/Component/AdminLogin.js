@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import './Styles/adminlogin.css' 
 
 function AdminLogin(props) {
-    const {onRoutechange, loaduser} = props
+    const {loaduser} = props
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
     const [message , setmessage] = useState("")

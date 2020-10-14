@@ -8,16 +8,13 @@ import AdminLogin from './Component/AdminLogin';
 import Cert from './Component/Cert';
 import Home from './Component/Home';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import Particles from 'react-particles-js';
 import 'tachyons'
-import UserRegister from './Component/UserRegister';
 import PDF from './Component/PDF';
 
 
 
 function App() {
   
-  const [route , setRoute] = useState('signin')
   const [user, setUser] =useState({
     id: "",
     name:"",
@@ -49,9 +46,6 @@ function App() {
        name:data.Name,
        email:data.Email
       })
-  }
-  const onRoutechange = (route) =>{
-     setRoute(route)
   }
   return (
     
