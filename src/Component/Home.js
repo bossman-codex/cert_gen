@@ -21,7 +21,7 @@ function Home({loadsearch}) {
             .then(user => {
                 if (user.CertificateNumber) { 
                     loadsearch(user)
-                    history.push(`/certificate/:${user.CertificateNumber}`);
+                    history.push(`/certificate:${user.CertificateNumber}`);
                 }else{
                     setmessage("Invalid Certificate number")  
                 }
