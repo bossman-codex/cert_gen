@@ -4,12 +4,13 @@ import "./Styles/display.css"
 
 function Home({loadsearch}) {
     const [cert ,setCert] = React.useState('')
+    const [message , setmessage] =React.useState("")
 
     let history = useHistory()
 
     const onsubmit = (e) =>{
          e.preventDefault()
-         fetch("http://localhost:3030/search",{
+         fetch("https://heroku--server.herokuapp.com/search",{
             method : "post",
             headers : {'Content-Type' : "application/json"},
             body: JSON.stringify({
@@ -20,9 +21,10 @@ function Home({loadsearch}) {
             .then(user => {
                 if (user.CertificateNumber) { 
                     loadsearch(user)
-                    console.log("hello")
+                    history.push(`cert/:cert${user.Item}`);
+                }else{
+                    setmessage("Invalid Certificate number")  
                 }
-                history.push(`/:certnumber ${user.CertificateNumber}`);
                 
             })
             
@@ -43,7 +45,9 @@ function Home({loadsearch}) {
                onChange = {(e)=>setCert(e.target.value)}
               />
               </div>
-             
+             <div style={{fontSize:20 , color:"red"}}>
+                 {message}
+                </div>
                <div className="button">
               <button
               onSubmit ={onsubmit}

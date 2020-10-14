@@ -12,7 +12,7 @@ function AdminHome() {
 
 
       useEffect(() => { 
-          fetch("http://localhost:3030/table" ) 
+          fetch("https://heroku--server.herokuapp.com/table" ) 
           .then(response => response.json())
           .then(data =>setData(data))
 

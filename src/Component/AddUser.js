@@ -12,7 +12,7 @@ function AddUser({onRouteChange , loaduser}) {
         let history = useHistory()
     
         const onsubmit = (e) =>{
-            fetch("http://localhost:3030/register" ,{
+            fetch("https://heroku--server.herokuapp.com/register" ,{
                 method : "post",
                 headers : {'Content-Type' : "application/json"},
                 body: JSON.stringify({
@@ -23,7 +23,7 @@ function AddUser({onRouteChange , loaduser}) {
             })
             .then(response => response.json())
             .then(users => {
-                if (users.id) {
+                if (users.ID) {
                     history.push('/adminhome');
                 }else{
                     setmessage("Incomplete Data")
@@ -64,7 +64,7 @@ function AddUser({onRouteChange , loaduser}) {
                 placeholder='Enter Password'
                 onChange={(e)=>setpassword(e.target.value) }
                 />
-                <div style={{fontSize:24 , color:"red"}}>
+                <div style={{fontSize:20 , color:"red"}}>
                 {message}
                </div>
                 <div className="button">

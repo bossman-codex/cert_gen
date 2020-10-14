@@ -12,9 +12,8 @@ function AdminHeader({onRouteChange , Name}) {
              
               <div className="second">
               <Link to ="/user">
-             <h3
-             onClick = {() => onRouteChange('user')} 
-             >Add User </h3>
+             <h3>
+             Add User </h3>
              </Link>
              <Link to ="/cert">
              <h3>
@@ -22,8 +21,7 @@ function AdminHeader({onRouteChange , Name}) {
              </h3>
              </Link>
              <Link to ="/">
-             <h3 
-             onClick = {() => onRouteChange("signin")}>
+             <h3>
              Log Out</h3></Link>
               </div>
             </nav>

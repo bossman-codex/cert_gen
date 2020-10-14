@@ -56,27 +56,6 @@ function App() {
   return (
     
   <div>
-  <Particles
-className="particles"
-params={{
-  "particles": {
-      "number": {
-          "value": 50
-      },
-      "size": {
-          "value": 3
-      }
-  },
-  "interactivity": {
-      "events": {
-          "onhover": {
-              "enable": true,
-              "mode": "repulse"
-          }
-      }
-  }
-}}
-/>
 <Router>
 <Switch>
 <Route path ="/user">
@@ -94,7 +73,7 @@ params={{
 <Route path ="/loginadmin">
 <AdminLogin loaduser ={loaduser}/>
 </Route>
-<Route path ="/:cert">
+<Route path ="cert/:cert">
 <PDF Cert ={cert}>
 <Cert Cert ={cert}/>
 </PDF>
@@ -104,38 +83,6 @@ params={{
 </Route>
 
 </Switch>
-
-    { // route === "home"
-  //   ? 
-  //    <div>
-  //       <AdminHeader  Name = {user.name} onRouteChange = {onRoutechange} />
-  //       <AdminHome/>
-  //   </div>
-  //   :
-  //   (
-  //     route === "Login" 
-  //     ? 
-  //     <AdminLogin loaduser ={loaduser} onRouteChange = {onRoutechange} /> 
-  //     :
-  //     (
-  //       route ==="cert"
-  //       ?
-  //       <AddCert  onRouteChange = {onRoutechange} />
-  //       :
-  //       (
-  //         route === 'user'
-  //         ?
-  //         <AddUser loaduser={loaduser} onRouteChange={onRoutechange} />
-  //         :
-  //         <Home onRouteChange = {onRoutechange}/>
-  //       )
-        
-  //     )
-      
-      
-  //   )
-  // 
-}
   </Router>
   </div>
   );

@@ -1,14 +1,18 @@
 import React,{useState} from 'react'
+import { useHistory } from 'react-router-dom'
 
 function AddCert({onRouteChange}) {
       const [companyname , setCompanyname] =useState('')
       const [testname , setTestname] =useState('')
       const [item , setItem] =useState('')
       const [itemid , setItemid] =useState('')
+      const [message , setmessage] = useState("")
+
+      let history = useHistory()
 
       const onsubmit = (e) =>{ 
         e.preventDefault()
-        fetch("http://localhost:3030/addcert" ,{
+        fetch("https://heroku--server.herokuapp.com/addcert" ,{
             method : "post",
             headers : {'Content-Type' : "application/json"},
             body: JSON.stringify({
@@ -20,10 +24,12 @@ function AddCert({onRouteChange}) {
         })
         .then(response => response.json())
         .then(users => {
-            if (users) {
-
-                console.log(`welcome ${users}`)
-            }
+            if (users.CertificateNumber) {
+              history.push('/adminhome');
+            }else{
+                setmessage("Incomplete Data")
+           }
+            
         })
        
         }
@@ -73,7 +79,9 @@ function AddCert({onRouteChange}) {
         onChange ={(e)=>{setItemid(e.target.value)}}
         />
         </div>
-
+        <div style={{fontSize:20 , color:"red"}}>
+        {message}
+       </div>
         <div className ="button">
         <button 
         onSubmit ={onsubmit}
