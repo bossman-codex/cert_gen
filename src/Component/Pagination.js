@@ -14,7 +14,7 @@ function Pagination({postperpage ,totalpost , paginate}) {
            {pagenumbers.map(number =>
              <li key ={number} className="">
                <button style ={{ 
-                fontSize: "7px",
+                fontSize: "15px",
                 padding: "10px",
                 borderRadius: 10,
                 margin: 20
