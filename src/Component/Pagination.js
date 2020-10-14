@@ -14,10 +14,11 @@ function Pagination({postperpage ,totalpost , paginate}) {
            {pagenumbers.map(number =>
              <li key ={number} className="">
                <button style ={{ 
+                backgroundColor: "#056e5b",
                 fontSize: "15px",
                 padding: "10px",
-                borderRadius: 10,
-                margin: 20
+                borderRadius: 5,
+                margin: 10
                 }} onClick={() =>paginate(number)}>
                 {number}
                </button>
