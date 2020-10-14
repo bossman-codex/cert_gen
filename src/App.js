@@ -67,7 +67,7 @@ function App() {
 <Route path ="/loginadmin">
 <AdminLogin loaduser ={loaduser}/>
 </Route>
-<Route path ="/certificate:">
+<Route path ="/certificate/:number">
 <PDF Cert ={cert}>
  <Cert Cert ={cert}/>
 </PDF>
