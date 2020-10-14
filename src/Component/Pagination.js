@@ -13,9 +13,9 @@ function Pagination({postperpage ,totalpost , paginate}) {
            <ul>
            {pagenumbers.map(number =>
              <li key ={number} className="">
-               <a onClick={() =>paginate(number)}>
+               <button style={{size : '20px'}} onClick={() =>paginate(number)}>
                 {number}
-               </a>
+               </button>
              </li>
             )}
            </ul> 
