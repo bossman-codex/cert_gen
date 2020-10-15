@@ -4,6 +4,7 @@ import './Styles/database.css'
 function Datatable({data}) {
     const columns = data[0] && Object.keys(data[0])
     return (
+      <div style={{overflowX:"auto"}}>
         <table cellSpacing={0} cellPadding={0}>
           <thead>
            <tr>{data[0] && columns.map((heading) =>   <th>{heading}</th> )}
@@ -18,6 +19,7 @@ function Datatable({data}) {
             </tr> )}
           </tbody>
         </table>
+        </div>
     )
 }
 
