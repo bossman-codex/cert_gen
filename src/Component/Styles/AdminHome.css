@@ -1,0 +1,52 @@
+ table, td{
+    margin: 0px;
+}
+
+
+.cont{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+  margin-right: auto;
+    
+}
+.container{
+  
+  background-color: #0ED2AE;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 10%;
+    padding-top: 10px;
+  
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+   td,  th {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+   tr{
+    background-color: white;
+
+  }
+  
+  .container tr:hover {background-color: #ddd;}
+  
+  .container th {
+    text-align: left;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-weight: 900;
+  }
+
+  .option button{
+    padding: 10px;
+
+  }
+

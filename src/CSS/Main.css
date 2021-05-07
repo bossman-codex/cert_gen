@@ -1,0 +1,100 @@
+.heading{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sections{
+    display: flex;
+    justify-content: space-between;
+    margin:1% 7%;
+    padding: 20px;
+}
+
+.second_section{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:2%;
+    padding-bottom:5%;
+}
+
+.register_button{
+    text-align: center;
+}
+
+.rest p{
+    text-align: center;
+    padding-top:18px ;
+    font-weight: 500;
+}
+
+.rest img{
+    object-fit: contain;
+    width: 90%;
+}
+
+.order p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.order img{
+    height: 50%;
+    object-fit: contain;
+}
+
+
+.delivery p{
+    text-align: center;
+    font-weight: 500;
+}
+.delivery img{
+    height: 50%;
+    object-fit: contain;
+}
+
+.rest_img{
+    padding-left: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.order_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.delivery_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.local h3{
+  text-align: center;
+}
+.local p{
+    color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.meals h3{
+    text-align: center;
+  }
+  .meals p{
+      color: orange;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: larger;
+  }
+
+  .register_button img{
+   width: 7%;
+   object-fit: contain;
+  }

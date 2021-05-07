@@ -1,0 +1,17 @@
+.unlist{
+    padding: 10px;
+    display: inline-block;
+}
+.list{
+    display: inline-block;
+    padding: 10px;
+}
+/* a{
+    cursor: pointer;
+    padding: 10px ;
+} */
+
+
+/* ul a:hover:not(.active) {
+    background-color: #50a353;
+} */
